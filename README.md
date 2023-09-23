@@ -1,4 +1,5 @@
-AccessWiz - A Remote Access Trojan (RAT)
+# Done by Anurag Patil - https://www.linkedin.com/in/anurag-patil-2a9b0022a/
+# AccessWiz - A Remote Access Trojan (RAT)
 
 ## Introduction
 
