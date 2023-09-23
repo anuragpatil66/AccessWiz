@@ -1,6 +1,8 @@
 # Done by Anurag Patil - https://www.linkedin.com/in/anurag-patil-2a9b0022a/
 # AccessWiz - A Remote Access Trojan (RAT)
 
+**Note:** **The Server Side (Victim Machine) code is specifically tailored for Linux based OS only and should be run using `ROOT Privileges` only**
+
 ## Introduction
 
 This project implements a Remote Access Trojan (RAT) system consisting of both client and server components. A RAT allows remote control of a target computer, enabling various interactions and data exchange with the target system. This README provides an overview of the project, including its functionalities, components, and instructions for use.
