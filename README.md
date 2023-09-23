@@ -91,6 +91,8 @@ With great power comes great responsibility. AccessWiz is a powerful tool that s
 
 Feel free to explore and contribute to the CipherNova project, and safeguard your data with advanced encryption techniques!
 
+**Note:** For a detailed explanation of each function and its usage, refer to the code documentation and comments.
+
 ## Disclaimer
 
 **Important**: The use of `AccessWiz - A Remote Access Trojan (RAT)` for unauthorized access to computer systems is illegal and unethical. This project is purely educational and should be used only for legal and ethical purposes, such as learning about eithical hacking and network security. Unauthorized use of this software for malicious purposes is strictly prohibited. The creators and contributors of this tool hold no responsibility for any misuse or unauthorized activities.
