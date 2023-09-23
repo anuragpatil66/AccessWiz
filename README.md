@@ -8,14 +8,15 @@
 This project implements a Remote Access Trojan (RAT) system consisting of both client and server components. A RAT allows remote control of a target computer, enabling various interactions and data exchange with the target system. This README provides an overview of the project, including its functionalities, components, and instructions for use.
 
 ## Features
-
-    1. Client-Server Architecture: The RAT consists of both client and server components for remote control.
+    1. No Dependency Issues: No need to wory about downloading dependencies, the client side code checks if the required dependencies exist, if not it donwloads them automatically.
     
-    2. Menu-Driven Interaction: The server provides a menu-driven interface for easy interaction with the client.
+    2. Client-Server Architecture: The RAT consists of both client and server components for remote control.
     
-    3. File Transfer: The system supports file transfer between the server and client.
+    3. Menu-Driven Interaction: The server provides a menu-driven interface for easy interaction with the client.
     
-    4. Error Handling: Robust error handling for various scenarios ensures a smooth experience.
+    4. File Transfer: The system supports file transfer between the server and client.
+    
+    5. Error Handling: Robust error handling for various scenarios ensures a smooth experience.
 
 
 ## Components
@@ -23,21 +24,23 @@ This project implements a Remote Access Trojan (RAT) system consisting of both c
 ### Client Side
 The client-side code (`client.py`) is intended to be run on the target machine, providing a gateway for the hacker (server) to interact with the compromised system. Key functionalities of the client-side code include:
 
-    1. Capture Screenshot: Takes a screenshot of the target system and sends it to the server.
+    1. No Dependencie Issues: Downloads missing dependencies on client machine automatically.
     
-    2. Retrieve Linux Wi-Fi Passwords: Retrieves saved Wi-Fi passwords from the target Linux system and sends them to the server.
+    2. Capture Screenshot: Takes a screenshot of the target system and sends it to the server.
     
-    3. Get Linux Password Hashes: Retrieves password hashes from the target Linux system and sends them to the server.
+    3. Retrieve Linux Wi-Fi Passwords: Retrieves saved Wi-Fi passwords from the target Linux system and sends them to the server.
     
-    4. Get Directory and File List: Generates a list of all directories and files on the target system and sends it to the server.
+    4. Get Linux Password Hashes: Retrieves password hashes from the target Linux system and sends them to the server.
     
-    5. Get System Information: Gathers system information from the target system (e.g., OS version, hardware details) and sends it to the server.
+    5. Get Directory and File List: Generates a list of all directories and files on the target system and sends it to the server.
     
-    6. Get Geolocation Information: Retrieves geolocation information of the target system and sends it to the server.
+    6. Get System Information: Gathers system information from the target system (e.g., OS version, hardware details) and sends it to the server.
     
-    7. Download File: Allows the server to request specific files from the client.
+    7. Get Geolocation Information: Retrieves geolocation information of the target system and sends it to the server.
     
-    8. Upload File: Accepts files from the server and stores them on the client.
+    8. Download File: Allows the server to request specific files from the client.
+    
+    9. Upload File: Accepts files from the server and stores them on the client.
 
 ### Server Side
 The server-side code (`server.py`) acts as the hacker's control center, allowing them to connect to compromised clients and perform various actions. Key functionalities of the server-side code include:
