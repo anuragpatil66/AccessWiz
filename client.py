@@ -5,6 +5,19 @@ import os  # Import the os module for interacting with the operating system
 import time  # Import the time module for time-related functions
 import platform  # Import the platform module for system information
 import re  # Import the re module for regular expressions
+import shutil  # Import the shutil module for checking executable programs
+
+"""
+This function checks whether a program is installed on the system. It follows these steps:
+
+- Utilizes the 'shutil.which' function, which returns the path to an executable program if it's found in the system's PATH.
+- Returns 'True' if 'shutil.which' returns a valid path (indicating the program is installed), or 'False' if it returns 'None' (indicating the program is not installed).
+
+Parameters:
+- program_name: The name of the program to check for installation.
+"""
+def is_program_installed(program_name): # Function to check if a program is installed
+    return shutil.which(program_name) is not None # Return True/False based on if package is installed
 
 # Check if the 'mss', 'psutil' and 'geocoder' libraries are installed
 try:
@@ -24,6 +37,24 @@ try:
     geocoder_installed = True  # Set a flag to indicate that 'geocoder' is installed
 except ImportError:
     geocoder_installed = False  # Set the flag to indicate that 'geocoder' is not installed
+
+# Function to install 'pip' using apt
+def install_pip():
+    try:
+        subprocess.run(["sudo", "apt", "install", "python3-pip", "-y"])  # Use subprocess to run an apt command to install 'pip'
+        return True  # Return True to indicate a successful installation
+    except Exception as e:
+        print(f"Failed to install 'pip': {str(e)}")  # Print an error message if installation fails
+        return False  # Return False to indicate installation failure
+
+# Function to install 'curl' using apt
+def install_curl():
+    try:
+        subprocess.run(["sudo", "apt", "install", "curl", "-y"])  # Use subprocess to run an apt command to install 'curl'
+        return True  # Return True to indicate a successful installation
+    except Exception as e:
+        print(f"Failed to install 'curl': {str(e)}")  # Print an error message if installation fails
+        return False  # Return False to indicate installation failure
 
 # Function to install the 'mss' library using pip
 def install_mss():
@@ -51,6 +82,26 @@ def install_geocoder():
     except Exception as e:
         print(f"Failed to install 'geocoder' library: {str(e)}")  # Print an error message if installation fails
         return False  # Return False to indicate installation failur
+
+# Check if 'pip' is not installed and install it if needed
+if not is_program_installed("pip"): # Check if 'pip' is not installed
+    print("The 'pip' program is not installed. Installing it now...") # Print a message indicating installation
+    if install_pip(): # Call the install_pip() function to attempt installation
+        print("The 'pip' program has been installed successfully.") # Print a success message
+        print()  # Print a blank line for readability
+    else:
+        print("Failed to install the 'pip' program.") # Print an error message if installation fails
+    print() # Print a blank line for readability
+
+# Check if 'curl' is not installed and install it if needed
+if not is_program_installed("curl"):
+    print("The 'curl' program is not installed. Installing it now...")
+    if install_curl():
+        print("The 'curl' program has been installed successfully.")
+        print()  # Print a blank line for readability
+    else:
+        print("Failed to install the 'curl' program.") # Print an error message if installation fails
+    print() # Print a blank line for readability
 
 # Check if 'mss', 'psutil', and 'geocoder' are installed, and install them if needed
 if not mss_installed:  # Check if 'mss' is not installed
