@@ -13,7 +13,7 @@
 This project implements a Remote Access Trojan (RAT) system consisting of both client and server components. A RAT allows remote control of a target computer, enabling various interactions and data exchange with the target system. This README provides an overview of the project, including its functionalities, components, and instructions for use.
 
 ## Features
-    1. No Dependency Issues: No need to wory about downloading dependencies, the client side code checks if the required dependencies exist, if not it donwloads them automatically.
+    1. No Dependency Issues: No need to worry about downloading dependencies, the client side code checks if the required dependencies exist, if not it downloads them automatically.
     
     2. Client-Server Architecture: The RAT consists of both client and server components for remote control.
     
