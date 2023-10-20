@@ -1,6 +1,8 @@
 # Done by Anurag Patil - https://www.linkedin.com/in/anurag-patil-2a9b0022a/
 # AccessWiz - A Remote Access Trojan (RAT)
 
+## `AccessWiz - A Remote Access Trojan (RAT)` is a `Post Exploitation` tool for Information Gathering and Further Enumeration.
+
 **Note:** **The Server Side (Victim Machine) code is specifically tailored for Linux based OS only and should be run using `ROOT PRIVILEGE` only**
 
 **Note:** **To make the OS not ask for `ROOT PASSWORD` after default timeout (15 minutes) follow the below steps**
