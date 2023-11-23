@@ -41,7 +41,7 @@ The client-side code (`client.py`) is intended to be run on the target machine, 
     
     5. Get Directory and File List: Generates a list of all directories and files on the target system and sends it to the server.
     
-    6. Get System Information: Gathers system information from the target system (e.g., OS version, hardware details) and sends it to the server.
+    6. Get System Information: Gathers system information from the target system (e.g., all installed apllications and their versions, OS Version, Hardware Details) and sends it to the server.
     
     7. Get Geolocation Information: Retrieves geolocation information of the target system and sends it to the server.
     
