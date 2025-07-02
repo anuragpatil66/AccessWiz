@@ -97,7 +97,7 @@ The Remote Access Trojan (RAT) project offers several advantages for those inter
 
 ## Stay Responsible:
 
-With great power comes great responsibility. AccessWiz is a powerful tool that should be used responsibly and ethically. Ensure you have the proper authorization before using this tool. Use CipherNova for legitimate purposes, such as to gain Hands-On Experience, security enhancement, or educational exploration. Adhere to ethical standards and legal regulations when utilizing this tool.
+With great power comes great responsibility. AccessWiz is a powerful tool that should be used responsibly and ethically. Ensure you have the proper authorization before using this tool. Use AccessWiz for legitimate purposes, such as to gain Hands-On Experience, security enhancement, or educational exploration. Adhere to ethical standards and legal regulations when utilizing this tool.
 
 Feel free to explore and contribute to the AccessWiz project, and safeguard your data with advanced encryption techniques!
 
